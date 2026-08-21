@@ -33,14 +33,14 @@ export default async function AuthorPage({ params }) {
         <div className="mx-auto w-[min(1120px,calc(100%-40px))]">
           <Link href="/" className="text-[11px] text-[#bbb] hover:text-white">← Back to the front page</Link>
         </div>
-        <div className="mx-auto mt-5 grid w-[min(1120px,calc(100%-40px))] grid-cols-1 items-center gap-4 text-center sm:grid-cols-[130px_1fr] sm:gap-6 sm:text-left lg:grid-cols-[170px_1fr] lg:gap-9">
+        <div className="mx-auto mt-5 grid w-[min(1120px,calc(100%-40px))] grid-cols-1 items-center gap-4 text-center sm:grid-cols-[110px_1fr] sm:gap-6 sm:text-left lg:grid-cols-[140px_1fr] lg:gap-9">
           <Image
             src={author.profileImage}
             alt={author.name}
-            width={170}
-            height={170}
+            width={140}
+            height={140}
             priority
-            className="mx-auto h-[120px] w-[120px] rounded-full border-2 border-[#333] object-cover sm:mx-0 lg:h-[170px] lg:w-[170px]"
+            className="mx-auto h-[90px] w-[90px] rounded-full border-2 border-[#333] object-cover sm:mx-0 lg:h-[140px] lg:w-[140px]"
           />
           <div>
             <span className="text-[10px] font-extrabold uppercase tracking-[0.08em]" style={{ color: '#e96889' }}>Reporter profile</span>
@@ -67,13 +67,13 @@ export default async function AuthorPage({ params }) {
         </div>
 
         {stories.length ? (
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_260px]">
-            <div>
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
+            <div className="min-w-0 flex-1">
               <SectionHeading title="Latest stories" href={`/${author.category}`} tone="red" />
 
               {lead && (
                 <div className="mb-6 border-b border-[#ddd] pb-6">
-                  <StoryCard article={lead} variant="feature" priority />
+                  <StoryCard article={lead} variant="featureCompact" priority />
                 </div>
               )}
 
@@ -84,7 +84,7 @@ export default async function AuthorPage({ params }) {
               )}
             </div>
 
-            <aside className="flex flex-col gap-6">
+            <aside className="flex flex-col gap-6 lg:sticky lg:top-24 lg:w-[260px] lg:shrink-0 lg:self-start">
               <div className="border-t border-[#111] pt-3">
                 <span className="text-[10px] font-extrabold uppercase">About the newsroom</span>
                 <p className="font-serif text-[14px]">Our journalists report independently and transparently. Corrections and updates are noted clearly.</p>

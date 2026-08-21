@@ -58,6 +58,17 @@ const variants = {
     dekClass: 'my-1.5 text-[13.5px] leading-[1.4] text-[#4d4d4a]',
     showMeta: false,
   },
+  // Same as `feature` but with a shorter image — used on the author page so
+  // the lead story doesn't push the sidebar/fold down as far.
+  featureCompact: {
+    wrap: 'flex flex-col',
+    image: 'relative block aspect-[1.9] overflow-hidden bg-[#e7e7e4]',
+    copy: '',
+    title: 'mt-2 font-serif text-[28px] leading-[1.1]',
+    showDek: true,
+    dekClass: 'my-1.5 text-[13.5px] leading-[1.4] text-[#4d4d4a]',
+    showMeta: false,
+  },
   card: {
     wrap: 'flex flex-col',
     image: 'relative block aspect-[1.45] overflow-hidden bg-[#e7e7e4]',
