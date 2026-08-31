@@ -1,10 +1,10 @@
-import { articles, authors, parseDate } from '@/lib/data';
+import { articles, authors, categories, parseDate } from '@/lib/data';
 
 export default function sitemap() {
   const base = 'https://example.com';
   return [
     { url: base, changeFrequency: 'daily', priority: 1 },
-    ...['news', 'opinion', 'sport', 'business', 'life'].map((category) => ({
+    ...categories.map((category) => ({
       url: `${base}/${category}`,
       changeFrequency: 'daily',
       priority: 0.8,

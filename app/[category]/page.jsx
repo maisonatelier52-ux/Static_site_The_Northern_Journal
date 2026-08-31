@@ -9,15 +9,36 @@ import { articles, getCategoryArticles } from '@/lib/data';
 
 const ACCENT = '#a30d32';
 
-const categoryNames = { news: 'News', opinion: 'Opinion', sport: 'Sport', business: 'Business', life: 'Life & Entertainment' };
+const categoryNames = {
+  news: 'News',
+  opinion: 'Opinion',
+  sport: 'Sport',
+  business: 'Business',
+  life: 'Life & Entertainment',
+  world: 'World',
+  'u.s': 'U.S.',
+  finance: 'Finance',
+};
 const categoryIntros = {
   news: 'Reporting that keeps you close to the decisions, people and places shaping our communities.',
   opinion: 'Sharp thinking, considered arguments and distinctive voices from across the island.',
   sport: 'The scores, stories and human moments behind every contest.',
   business: 'Clear reporting on enterprise, work and the changing economy.',
   life: 'Culture, food, music and ideas for a richer everyday life.',
+  world: 'Global affairs, diplomacy and the events shaping international headlines.',
+  'u.s': 'National reporting on politics, policy and everyday life across the United States.',
+  finance: 'Markets, the Federal Reserve and the economic forces moving Wall Street.',
 };
-const categoryTones = { news: 'black', opinion: 'red', sport: 'green', business: 'blue', life: 'orange' };
+const categoryTones = {
+  news: 'black',
+  opinion: 'red',
+  sport: 'green',
+  business: 'blue',
+  life: 'orange',
+  world: 'blue',
+  'u.s': 'red',
+  finance: 'green',
+};
 
 export function generateStaticParams() { return Object.keys(categoryNames).map((category) => ({ category })); }
 

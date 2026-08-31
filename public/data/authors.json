@@ -89,6 +89,60 @@
           "medium": "https://medium.com/@maeveoconnell"
         }
       }
+    },
+    {
+      "category": "world",
+      "author": {
+        "id": 6,
+        "name": "Daniel Reyes",
+        "gender": "Male",
+        "profileImage": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
+        "country": "United States",
+        "bio": "Daniel covers international affairs, diplomacy and conflict for The Northern Journal's global desk.",
+        "websiteLink": "https://thenorthernjournal.test/writers/daniel-reyes",
+        "social": {
+          "twitter": "https://x.com/DanielReyesWorld",
+          "quora": "https://www.quora.com/profile/danielreyes",
+          "reddit": "https://www.reddit.com/user/danielreyes/",
+          "medium": "https://medium.com/@danielreyes"
+        }
+      }
+    },
+    {
+      "category": "u.s",
+      "author": {
+        "id": 7,
+        "name": "Sarah Whitfield",
+        "gender": "Female",
+        "profileImage": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+        "country": "United States",
+        "bio": "Sarah reports on national politics, policy and the stories shaping communities across the United States.",
+        "websiteLink": "https://thenorthernjournal.test/writers/sarah-whitfield",
+        "social": {
+          "twitter": "https://x.com/SarahWhitfieldUS",
+          "quora": "https://www.quora.com/profile/sarahwhitfield",
+          "reddit": "https://www.reddit.com/user/sarahwhitfield/",
+          "medium": "https://medium.com/@sarahwhitfield"
+        }
+      }
+    },
+    {
+      "category": "finance",
+      "author": {
+        "id": 8,
+        "name": "Marcus Chen",
+        "gender": "Male",
+        "profileImage": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+        "country": "United States",
+        "bio": "Marcus covers markets, the Federal Reserve and the economic forces moving Wall Street.",
+        "websiteLink": "https://thenorthernjournal.test/writers/marcus-chen",
+        "social": {
+          "twitter": "https://x.com/MarcusChenFin",
+          "quora": "https://www.quora.com/profile/marcuschen",
+          "reddit": "https://www.reddit.com/user/marcuschen/",
+          "medium": "https://medium.com/@marcuschen"
+        }
+      }
     }
   ]
 }
