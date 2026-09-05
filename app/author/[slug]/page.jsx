@@ -8,7 +8,7 @@ import { authors, getAuthor, getAuthorArticles } from '@/lib/data';
 
 const ACCENT = '#a30d32';
 
-export function generateStaticParams() { return authors.map((author) => ({ slug: author.category })); }
+export function generateStaticParams() { return authors.map((author) => ({ slug: author.slug })); }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -20,7 +20,7 @@ export default async function AuthorPage({ params }) {
   const { slug } = await params;
   const author = getAuthor(slug);
   if (!author) notFound();
-  const stories = getAuthorArticles(slug);
+  const stories = getAuthorArticles(author.category);
   const [lead, ...rest] = stories;
   const colleagues = authors.filter((a) => a.category !== author.category).slice(0, 4);
 
@@ -96,7 +96,7 @@ export default async function AuthorPage({ params }) {
                   <span className="text-[10px] font-extrabold uppercase">Other desks</span>
                   <div className="mt-2 flex flex-col gap-3">
                     {colleagues.map((colleague) => (
-                      <Link key={colleague.id} href={`/author/${colleague.category}`} className="flex items-center gap-2.5">
+                      <Link key={colleague.id} href={`/author/${colleague.slug}`} className="flex items-center gap-2.5">
                         <Image src={colleague.profileImage} alt={colleague.name} width={36} height={36} className="h-9 w-9 shrink-0 rounded-full grayscale-[25%]" />
                         <span>
                           <strong className="block font-serif text-[13px] leading-tight">{colleague.name}</strong>

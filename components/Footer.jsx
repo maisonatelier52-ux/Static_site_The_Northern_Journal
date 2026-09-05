@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Clock, Shield, Globe, Users, Mail, ArrowUp } from 'lucide-react';
+import { FaFacebookF, FaXTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa6';
 import { getArticles, formatDate } from '@/lib/data';
 
 const ACCENT = '#a30d32';
@@ -12,13 +13,14 @@ const footerLinkGroups = [
     heading: 'Sections',
     links: [
       { label: 'Home', href: '/' },
-      { label: 'News', href: '/news' },
-      { label: 'Sports', href: '/sport' },
+      { label: 'World', href: '/world' },
+      { label: 'U.S.', href: '/u.s' },
       { label: 'Business', href: '/business' },
+      { label: 'Finance', href: '/finance' },
       { label: 'Politics', href: '/politics' },
-      { label: 'Life & Entertainment', href: '/life' },
-      { label: 'Opinion', href: '/opinion' },
-      { label: 'Investigations', href: '/investigations' },
+      { label: 'Health', href: '/health' },
+      { label: 'Technology', href: '/technology' },
+      { label: 'Investigation', href: '/investigation' },
     ],
   },
   {
@@ -50,11 +52,11 @@ const footerLinkGroups = [
 ];
 
 const socialLinks = [
-  { name: 'Facebook', href: '#', icon: 'facebook' },
-  { name: 'X', href: '#', icon: 'x' },
-  { name: 'Instagram', href: '#', icon: 'instagram' },
-  { name: 'LinkedIn', href: '#', icon: 'linkedin' },
-  { name: 'YouTube', href: '#', icon: 'youtube' },
+  { name: 'Facebook', href: '#', Icon: FaFacebookF },
+  { name: 'X', href: '#', Icon: FaXTwitter },
+  { name: 'Instagram', href: '#', Icon: FaInstagram },
+  { name: 'LinkedIn', href: '#', Icon: FaLinkedinIn },
+  { name: 'YouTube', href: '#', Icon: FaYoutube },
 ];
 
 const highlights = [
@@ -79,32 +81,6 @@ const highlights = [
     Icon: Users,
   },
 ];
-
-// lucide-react no longer ships brand/social marks, so these are drawn inline
-// to match the stroke-icon style used everywhere else in the footer.
-function SocialIcon({ icon, className }) {
-  const paths = {
-    facebook: 'M14 8.5h2.5V5.5H14c-1.9 0-3.5 1.6-3.5 3.5v2H8v3h2.5v6.5h3V13.5H16l.5-3h-3v-2c0-.6.4-2 1-2z',
-    x: 'M6 5.5l12.5 13M18.5 5.5l-12.5 13',
-    instagram: 'M7 4.5h10a2.5 2.5 0 012.5 2.5v10a2.5 2.5 0 01-2.5 2.5H7A2.5 2.5 0 014.5 17V7A2.5 2.5 0 017 4.5zM12 15.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7zM16.6 7.4h.01',
-    linkedin: 'M6.5 9.5v8M6.5 6.5h.01M11 17.5v-4.5a2.5 2.5 0 015 0v4.5M11 9.5v8',
-    youtube: 'M20 8.3a2.7 2.7 0 00-1.9-1.9C16.4 6 12 6 12 6s-4.4 0-6.1.4A2.7 2.7 0 004 8.3 27.9 27.9 0 003.6 12 27.9 27.9 0 004 15.7a2.7 2.7 0 001.9 1.9C7.6 18 12 18 12 18s4.4 0 6.1-.4a2.7 2.7 0 001.9-1.9c.3-1.2.4-2.5.4-3.7 0-1.2-.1-2.5-.4-3.7zM10.2 14.6V9.4l4.6 2.6-4.6 2.6z',
-  };
-
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-    >
-      <path d={paths[icon]} />
-    </svg>
-  );
-}
 
 export default function Footer() {
   const latestArticles = getArticles().slice(0, 4);
@@ -163,14 +139,14 @@ export default function Footer() {
               Independent journalism. Trusted coverage from local communities to the global stage.
             </p>
             <div className="mt-4 flex gap-2">
-              {socialLinks.map(({ name, href, icon }) => (
+              {socialLinks.map(({ name, href, Icon }) => (
                 <a
                   key={name}
                   href={href}
                   aria-label={name}
                   className="flex h-8 w-8 items-center justify-center rounded-full border border-[#333] text-[#ccc] transition-colors hover:border-[#a30d32] hover:text-white"
                 >
-                  <SocialIcon icon={icon} className="h-3.5 w-3.5" />
+                  <Icon className="h-3.5 w-3.5" />
                 </a>
               ))}
             </div>

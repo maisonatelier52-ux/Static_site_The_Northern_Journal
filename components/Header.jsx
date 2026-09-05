@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
+import { FaFacebookF, FaXTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa6';
 import { categoryList, articles } from '@/lib/data';
 
 const ACCENT = '#a30d32';
@@ -114,7 +115,12 @@ export default function Header() {
     router.push(`/${category}/${slug}`);
   };
 
-  const socialIcons = ['f', '𝕏', 'in', '▶'];
+  const socialIcons = [
+    { label: 'Facebook', Icon: FaFacebookF, href: '#' },
+    { label: 'X / Twitter', Icon: FaXTwitter, href: '#' },
+    { label: 'LinkedIn', Icon: FaLinkedinIn, href: '#' },
+    { label: 'YouTube', Icon: FaYoutube, href: '#' },
+  ];
 
   return (
     <>
@@ -141,8 +147,10 @@ export default function Header() {
                 aria-expanded={searchOpen}
               >⌕</button>
               <div className="hidden md:flex ml-3 gap-1" aria-label="Social media">
-                {socialIcons.map((icon) => (
-                  <a key={icon} href="#" className="grid h-[25px] w-[25px] place-items-center border border-[#aaa] text-[10px]">{icon}</a>
+                {socialIcons.map(({ label, Icon, href }) => (
+                  <a key={label} href={href} aria-label={label} className="grid h-[25px] w-[25px] place-items-center border border-[#aaa] text-[11px] text-[#111] hover:border-[#a30d32] hover:text-[#a30d32]">
+                    <Icon aria-hidden="true" />
+                  </a>
                 ))}
               </div>
             </div>
@@ -281,9 +289,9 @@ export default function Header() {
 
         <div className="mt-auto flex flex-col gap-3 pt-6">
           <div className="flex gap-2" aria-label="Social media">
-            {socialIcons.map((icon) => (
-              <a key={icon} href="#" className="grid h-[30px] w-[30px] place-items-center border border-[#555] text-[12px] text-white hover:border-[#e96889] hover:text-[#e96889]">
-                {icon}
+            {socialIcons.map(({ label, Icon, href }) => (
+              <a key={label} href={href} aria-label={label} className="grid h-[30px] w-[30px] place-items-center border border-[#555] text-[13px] text-white hover:border-[#e96889] hover:text-[#e96889]">
+                <Icon aria-hidden="true" />
               </a>
             ))}
           </div>

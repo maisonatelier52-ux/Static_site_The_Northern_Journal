@@ -9,7 +9,7 @@ export default function TopicSection({ title, slug, tone, articles, flip = false
 
     return (
       <section className="mt-6">
-        <SectionHeading title={title} href={`/${slug}`} tone={tone} />
+        <SectionHeading title={title} href={slug ? `/${slug}` : undefined} tone={tone} />
 
         <div className="grid grid-cols-1 gap-5 md:gap-6 lg:grid-cols-3">
           <div>
@@ -34,7 +34,7 @@ export default function TopicSection({ title, slug, tone, articles, flip = false
 
     return (
       <section className="mt-6">
-        <SectionHeading title={title} href={`/${slug}`} tone={tone} />
+        <SectionHeading title={title} href={slug ? `/${slug}` : undefined} tone={tone} />
 
         <div className="grid grid-cols-1 gap-5 md:gap-6 lg:grid-cols-3">
           <div className="flex flex-col gap-1">
@@ -56,7 +56,7 @@ export default function TopicSection({ title, slug, tone, articles, flip = false
 
   return (
     <section className="mt-6">
-      <SectionHeading title={title} href={`/${slug}`} tone={tone} />
+      <SectionHeading title={title} href={slug ? `/${slug}` : undefined} tone={tone} />
 
       <div className={`grid grid-cols-1 gap-5 md:gap-6 lg:grid-cols-[1.35fr_.65fr] ${flip ? 'lg:grid-cols-[.65fr_1.35fr]' : ''}`}>
         <div className={flip ? 'lg:order-2' : ''}>

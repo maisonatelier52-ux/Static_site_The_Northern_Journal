@@ -212,7 +212,7 @@ export default async function ArticlePage({ params }) {
                 <>
                   <span aria-hidden="true">·</span>
                   <span>
-                    By <Link href={`/author/${article.category}`} className="font-bold text-[#111]">{author.name}</Link>
+                    By <Link href={`/author/${author.slug}`} className="font-bold text-[#111]">{author.name}</Link>
                   </span>
                 </>
               )}

@@ -42,14 +42,17 @@ export default function HomePage({ articles, authors }) {
                 </div>
               </div>
 
-      <TopicSection title="Latest" slug="news" tone="black" articles={articles.slice(1, 7)} />
+      <TopicSection title="Latest" tone="black" articles={articles.slice(1, 7)} />
       <OpinionStrip authors={authors} />
-      {/* <TopicSection title="World" slug="news" tone="black" articles={byCategory('news')} flip /> */}
-      <TopicSection title="World" slug="news" tone="black" articles={byCategory('news')} layout="split" />
+      <TopicSection title="World" slug="world" tone="blue" articles={byCategory('world')} layout="split" />
       <Featured articles={articles.filter((article) => article.featured).slice(0, 4)} />
-      <TopicSection title="Business" slug="business" tone="black" articles={byCategory('business')} />
-       <TopicSection title="Culture" slug="life" tone="black" articles={byCategory('life')} layout="splitsecond" />
-      {/* <TopicSection title="Culture" slug="life" tone="black" articles={byCategory('life')} flip /> */}
+      <TopicSection title="Politics" slug="politics" tone="red" articles={byCategory('politics')} />
+      <TopicSection title="Business" slug="business" tone="blue" articles={byCategory('business')} />
+      <TopicSection title="Health" slug="health" tone="green" articles={byCategory('health')} layout="splitsecond" />
+      <TopicSection title="Technology" slug="technology" tone="blue" articles={byCategory('technology')} />
+      <TopicSection title="U.S." slug="u.s" tone="red" articles={byCategory('u.s')} />
+      <TopicSection title="Finance" slug="finance" tone="green" articles={byCategory('finance')} />
+      <TopicSection title="Investigation" slug="investigation" tone="black" articles={byCategory('investigation')} layout="split" />
       <Newsletter />
       <Sponsored articles={articles.slice(4, 8)} />
     </main>

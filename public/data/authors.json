@@ -1,96 +1,6 @@
 {
   "categories": [
     {
-      "category": "news",
-      "author": {
-        "id": 1,
-        "name": "Aoife Murphy",
-        "gender": "Female",
-        "profileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
-        "country": "Ireland",
-        "bio": "Aoife reports on politics, public life and the decisions shaping communities across the island.",
-        "websiteLink": "https://thenorthernjournal.test/writers/aoife-murphy",
-        "social": {
-          "twitter": "https://x.com/AoifeReports",
-          "quora": "https://www.quora.com/profile/aoifemurphy",
-          "reddit": "https://www.reddit.com/user/aoifemurphy/",
-          "medium": "https://medium.com/@aoifemurphy"
-        }
-      }
-    },
-    {
-      "category": "sport",
-      "author": {
-        "id": 2,
-        "name": "Conor Bradley",
-        "gender": "Male",
-        "profileImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
-        "country": "Ireland",
-        "bio": "Conor covers football, GAA and the athletes redefining sport at home and abroad.",
-        "websiteLink": "https://thenorthernjournal.test/writers/conor-bradley",
-        "social": {
-          "twitter": "https://x.com/ConorOnSport",
-          "quora": "https://www.quora.com/profile/conorbradley",
-          "reddit": "https://www.reddit.com/user/conorbradley/",
-          "medium": "https://medium.com/@conorbradley"
-        }
-      }
-    },
-    {
-      "category": "life",
-      "author": {
-        "id": 3,
-        "name": "Niamh Kelly",
-        "gender": "Female",
-        "profileImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
-        "country": "Ireland",
-        "bio": "Niamh writes about music, theatre, books and the people making culture feel vital.",
-        "websiteLink": "https://thenorthernjournal.test/writers/niamh-kelly",
-        "social": {
-          "twitter": "https://x.com/NiamhCulture",
-          "quora": "https://www.quora.com/profile/niamhkelly",
-          "reddit": "https://www.reddit.com/user/niamhkelly/",
-          "medium": "https://medium.com/@niamhkelly"
-        }
-      }
-    },
-    {
-      "category": "business",
-      "author": {
-        "id": 4,
-        "name": "Seán Doran",
-        "gender": "Male",
-        "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-        "country": "Ireland",
-        "bio": "Seán explains the companies, ideas and economic shifts changing how people work and live.",
-        "websiteLink": "https://thenorthernjournal.test/writers/sean-doran",
-        "social": {
-          "twitter": "https://x.com/SeanDoranBiz",
-          "quora": "https://www.quora.com/profile/sendoran",
-          "reddit": "https://www.reddit.com/user/sendoran/",
-          "medium": "https://medium.com/@sendoran"
-        }
-      }
-    },
-    {
-      "category": "opinion",
-      "author": {
-        "id": 5,
-        "name": "Maeve O’Connell",
-        "gender": "Female",
-        "profileImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
-        "country": "Ireland",
-        "bio": "Maeve is an award-winning commentator on civic life, education and social change.",
-        "websiteLink": "https://thenorthernjournal.test/writers/maeve-oconnell",
-        "social": {
-          "twitter": "https://x.com/MaeveWrites",
-          "quora": "https://www.quora.com/profile/maeveoconnell",
-          "reddit": "https://www.reddit.com/user/maeveoconnell/",
-          "medium": "https://medium.com/@maeveoconnell"
-        }
-      }
-    },
-    {
       "category": "world",
       "author": {
         "id": 6,
@@ -105,7 +15,8 @@
           "quora": "https://www.quora.com/profile/danielreyes",
           "reddit": "https://www.reddit.com/user/danielreyes/",
           "medium": "https://medium.com/@danielreyes"
-        }
+        },
+        "slug": "daniel-reyes"
       }
     },
     {
@@ -123,7 +34,27 @@
           "quora": "https://www.quora.com/profile/sarahwhitfield",
           "reddit": "https://www.reddit.com/user/sarahwhitfield/",
           "medium": "https://medium.com/@sarahwhitfield"
-        }
+        },
+        "slug": "sarah-whitfield"
+      }
+    },
+    {
+      "category": "business",
+      "author": {
+        "id": 4,
+        "name": "Seán Doran",
+        "gender": "Male",
+        "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+        "country": "Ireland",
+        "bio": "Seán explains the companies, ideas and economic shifts changing how people work and live.",
+        "websiteLink": "https://thenorthernjournal.test/writers/sean-doran",
+        "social": {
+          "twitter": "https://x.com/SeanDoranBiz",
+          "quora": "https://www.quora.com/profile/sendoran",
+          "reddit": "https://www.reddit.com/user/sendoran/",
+          "medium": "https://medium.com/@sendoran"
+        },
+        "slug": "sean-doran"
       }
     },
     {
@@ -141,7 +72,84 @@
           "quora": "https://www.quora.com/profile/marcuschen",
           "reddit": "https://www.reddit.com/user/marcuschen/",
           "medium": "https://medium.com/@marcuschen"
-        }
+        },
+        "slug": "marcus-chen"
+      }
+    },
+    {
+      "category": "politics",
+      "author": {
+        "id": 9,
+        "name": "Jordan Ellison",
+        "gender": "Male",
+        "profileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
+        "country": "United States",
+        "bio": "Jordan is The Northern Journal's Washington correspondent, covering Congress, the White House and campaigns.",
+        "websiteLink": "https://thenorthernjournal.test/writers/jordan-ellison",
+        "social": {
+          "twitter": "https://x.com/JordanEllisonDC",
+          "quora": "https://www.quora.com/profile/jordanellison",
+          "reddit": "https://www.reddit.com/user/jordanellison/",
+          "medium": "https://medium.com/@jordanellison"
+        },
+        "slug": "jordan-ellison"
+      }
+    },
+    {
+      "category": "health",
+      "author": {
+        "id": 10,
+        "name": "Priya Nair",
+        "gender": "Female",
+        "profileImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "country": "United States",
+        "bio": "Priya covers public health, medicine and the policies shaping care for patients across the country.",
+        "websiteLink": "https://thenorthernjournal.test/writers/priya-nair",
+        "social": {
+          "twitter": "https://x.com/PriyaNairHealth",
+          "quora": "https://www.quora.com/profile/priyanair",
+          "reddit": "https://www.reddit.com/user/priyanair/",
+          "medium": "https://medium.com/@priyanair"
+        },
+        "slug": "priya-nair"
+      }
+    },
+    {
+      "category": "technology",
+      "author": {
+        "id": 11,
+        "name": "Derek Simmons",
+        "gender": "Male",
+        "profileImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+        "country": "United States",
+        "bio": "Derek reports on AI, big tech and the companies building the infrastructure of the future.",
+        "websiteLink": "https://thenorthernjournal.test/writers/derek-simmons",
+        "social": {
+          "twitter": "https://x.com/DerekSimmonsTech",
+          "quora": "https://www.quora.com/profile/dereksimmons",
+          "reddit": "https://www.reddit.com/user/dereksimmons/",
+          "medium": "https://medium.com/@dereksimmons"
+        },
+        "slug": "derek-simmons"
+      }
+    },
+    {
+      "category": "investigation",
+      "author": {
+        "id": 12,
+        "name": "Diane Calloway",
+        "gender": "Female",
+        "profileImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+        "country": "United States",
+        "bio": "Diane leads The Northern Journal's investigations desk, digging into accountability and public records.",
+        "websiteLink": "https://thenorthernjournal.test/writers/diane-calloway",
+        "social": {
+          "twitter": "https://x.com/DianeCallowayInv",
+          "quora": "https://www.quora.com/profile/dianecalloway",
+          "reddit": "https://www.reddit.com/user/dianecalloway/",
+          "medium": "https://medium.com/@dianecalloway"
+        },
+        "slug": "diane-calloway"
       }
     }
   ]

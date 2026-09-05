@@ -16,7 +16,7 @@ export default function sitemap() {
       priority: 0.7,
     })),
     ...authors.map((author) => ({
-      url: `${base}/author/${author.category}`,
+      url: `${base}/author/${author.slug}`,
       changeFrequency: 'weekly',
       priority: 0.5,
     })),

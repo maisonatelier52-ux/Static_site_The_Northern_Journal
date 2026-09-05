@@ -10,34 +10,34 @@ import { articles, getCategoryArticles } from '@/lib/data';
 const ACCENT = '#a30d32';
 
 const categoryNames = {
-  news: 'News',
-  opinion: 'Opinion',
-  sport: 'Sport',
-  business: 'Business',
-  life: 'Life & Entertainment',
   world: 'World',
   'u.s': 'U.S.',
+  business: 'Business',
   finance: 'Finance',
+  politics: 'Politics',
+  health: 'Health',
+  technology: 'Technology',
+  investigation: 'Investigation',
 };
 const categoryIntros = {
-  news: 'Reporting that keeps you close to the decisions, people and places shaping our communities.',
-  opinion: 'Sharp thinking, considered arguments and distinctive voices from across the island.',
-  sport: 'The scores, stories and human moments behind every contest.',
-  business: 'Clear reporting on enterprise, work and the changing economy.',
-  life: 'Culture, food, music and ideas for a richer everyday life.',
   world: 'Global affairs, diplomacy and the events shaping international headlines.',
   'u.s': 'National reporting on politics, policy and everyday life across the United States.',
+  business: 'Clear reporting on enterprise, work and the changing economy.',
   finance: 'Markets, the Federal Reserve and the economic forces moving Wall Street.',
+  politics: 'Congress, the White House and the campaigns shaping power in Washington.',
+  health: 'Public health, medicine and the policies shaping care for patients across the country.',
+  technology: 'AI, big tech and the infrastructure powering the next wave of innovation.',
+  investigation: 'Accountability reporting and in-depth investigations that follow the record.',
 };
 const categoryTones = {
-  news: 'black',
-  opinion: 'red',
-  sport: 'green',
-  business: 'blue',
-  life: 'orange',
   world: 'blue',
   'u.s': 'red',
+  business: 'blue',
   finance: 'green',
+  politics: 'red',
+  health: 'green',
+  technology: 'blue',
+  investigation: 'black',
 };
 
 export function generateStaticParams() { return Object.keys(categoryNames).map((category) => ({ category })); }
