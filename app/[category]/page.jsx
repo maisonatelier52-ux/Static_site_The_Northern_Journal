@@ -11,7 +11,7 @@ const ACCENT = '#a30d32';
 
 const categoryNames = {
   world: 'World',
-  'u.s': 'U.S.',
+  us: 'U.S.',
   business: 'Business',
   finance: 'Finance',
   politics: 'Politics',
@@ -21,7 +21,7 @@ const categoryNames = {
 };
 const categoryIntros = {
   world: 'Global affairs, diplomacy and the events shaping international headlines.',
-  'u.s': 'National reporting on politics, policy and everyday life across the United States.',
+  us: 'National reporting on politics, policy and everyday life across the United States.',
   business: 'Clear reporting on enterprise, work and the changing economy.',
   finance: 'Markets, the Federal Reserve and the economic forces moving Wall Street.',
   politics: 'Congress, the White House and the campaigns shaping power in Washington.',
@@ -31,7 +31,7 @@ const categoryIntros = {
 };
 const categoryTones = {
   world: 'blue',
-  'u.s': 'red',
+  us: 'red',
   business: 'blue',
   finance: 'green',
   politics: 'red',

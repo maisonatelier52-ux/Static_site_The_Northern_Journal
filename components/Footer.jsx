@@ -14,7 +14,7 @@ const footerLinkGroups = [
     links: [
       { label: 'Home', href: '/' },
       { label: 'World', href: '/world' },
-      { label: 'U.S.', href: '/u.s' },
+      { label: 'U.S.', href: '/us' },
       { label: 'Business', href: '/business' },
       { label: 'Finance', href: '/finance' },
       { label: 'Politics', href: '/politics' },
