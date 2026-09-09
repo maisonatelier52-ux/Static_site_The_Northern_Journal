@@ -47,11 +47,8 @@ export default function HomePage({ articles, authors }) {
       <TopicSection title="World" slug="world" tone="blue" articles={byCategory('world')} layout="split" />
       <Featured articles={articles.filter((article) => article.featured).slice(0, 4)} />
       <TopicSection title="Politics" slug="politics" tone="red" articles={byCategory('politics')} />
-      <TopicSection title="Business" slug="business" tone="blue" articles={byCategory('business')} />
       <TopicSection title="Health" slug="health" tone="green" articles={byCategory('health')} layout="splitsecond" />
       <TopicSection title="Technology" slug="technology" tone="blue" articles={byCategory('technology')} />
-      <TopicSection title="U.S." slug="us" tone="red" articles={byCategory('us')} />
-      <TopicSection title="Finance" slug="finance" tone="green" articles={byCategory('finance')} />
       <TopicSection title="Investigation" slug="investigation" tone="black" articles={byCategory('investigation')} layout="split" />
       <Newsletter />
       <Sponsored articles={articles.slice(4, 8)} />
